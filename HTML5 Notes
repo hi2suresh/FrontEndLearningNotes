@@ -1,0 +1,42 @@
+HTML5 Notes
+-------------------------
+<!DOCTYPE html>  -> HTML5 declaration
+<html lang="en"></html> -> Language Atrribute
+<head>
+<meta charset="utf-8">  -> Character encoding
+</head>
+
+Form Elements
+----------------------------------------
+<input type="email" name="EmailField"> -->Email field
+<input type="url" name="urlField">
+<input type="number" name="numberField" min="10" max="20" step="2" >
+<input type="range" name="rangeField"   min="100" max="200" step="2"/>
+<input type="tel" name="telField"/>
+<input type="search" name="searchField"/>
+<input type="date" name="dateField"/>
+<input type="time" name="timeField"/>
+<input type="datetime" name="datetimeField"/>
+<input type="month" name="monthField"/>
+<input type="week" name="weekField"/>
+<input type="color" name="colorField"/>
+<input type="text" name="comboBoxField" autofocus placeholder="Some default text" required>  -> Autofocus, Required - Mandatory field
+<input type="text" name="textField" pattern="[A-Z][0-9]">   -> Pattern match using regular expression
+
+Combo Box: 
+------------------------------------------------------------
+<input type="text" name="comboBoxField" list="comboBoxList">
+<datalist id="comboBoxList">
+    <option label="Anna">
+    <option label="John">
+    <option label="Xavier">
+</datalist>
+------------------------------------------------------------
+
+Form Attribute:
+----------------------------------
+<form id="theForm">
+    <input type="text" >
+</form>    
+<input type="range" form="theForm"> 
+----------------------------------
