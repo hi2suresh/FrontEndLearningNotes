@@ -1,0 +1,20 @@
+CSS Notes
+--------------------------------------------------------------------------
+Universal Selector: * {}
+Element Selector: div {}
+Class Selector: .className {}
+ID Selector: #id {}
+
+Attribute Selector: 
+<a href="http://google.com"> JavaScript Tutorials</a>    
+<a name="jump-here"></a>   
+[href] {
+    font-size: 18px;
+}
+This example CSS rule selects all HTML elements that have an href attribute. That means the first a element in the HTML shown earlier will be targeted by the CSS rule, but the second a element will not.
+
+Attribute Equals: [href="http://jenkov.com"] {}
+Attribute Begins With: [href^="http://"] {}
+Attribute Ends With: [href$=".png"] {}
+Attribute Contains: [href*="png"] {}
+Attribute Contains Word: [href ~= "google"] {}
