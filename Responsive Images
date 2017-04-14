@@ -1,0 +1,55 @@
+ <div class="wrapper">
+      
+      <img
+        srcset="banner-large.jpg 2048w, -> Browser will choose the image based on device
+                banner-medium.jpg 1400w,
+                banner-small.jpg  800w"
+        src="banner-medium.jpg"    -> Fallback if srcset is not supported
+        alt="Photograph of Nick Pettit in front of trees."
+        class="banner-image"
+        />
+      
+      <div class="content-block">
+        
+        <div class="profile-description">
+          
+          <div class="profile-image">
+            <img
+              srcset="photo-@2x.jpg 2x, photo-@1x.jpg 1x" -> Browser will choose the image based on device
+              src="photo-@1x.jpg"
+              alt="Photograph of a flower."
+              />
+          </div>
+
+ <div class="wrapper">
+      
+      <picture>   -> For orientations
+        <source 
+          media="(orientation: landscape)"   -> Browser selects this in landscape
+          srcset="banner-large.jpg  2048w,
+                  banner-medium.jpg 1400w,
+                  banner-small.jpg  800w"
+          />
+        <source   -> Browser selects this in other than landscape e.g. portrait
+          srcset="banner-square-large.jpg  1000w,
+                  banner-square-medium.jpg 800w"
+          />
+        <img
+          src="banner-medium.jpg"
+          alt="Photograph of Nick Pettit in front of trees."
+          class="banner-image"
+          />
+      </picture>
+      
+      <div class="content-block">
+        
+        <div class="profile-description">
+          
+          <div class="profile-image">
+            <img
+              srcset="photo-@2x.jpg 2x,
+                      photo-@1x.jpg 1x"
+              src="photo-@1x.jpg"
+              alt="Photograph of a flower."
+              />
+          </div>
